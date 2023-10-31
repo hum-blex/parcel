@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parcel", "parcel.csproj", "{79EE6E97-117A-4CB0-8876-0C9BCCC2F71F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parcel_api", "..\parcel_api\parcel_api.csproj", "{2AC32036-DE9C-40F0-BB25-2D720C0A3B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parcel_app", "..\parcel_app\parcel_app.csproj", "{BA6B59B4-FC54-40AA-8AA2-BC801014A9B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79EE6E97-117A-4CB0-8876-0C9BCCC2F71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79EE6E97-117A-4CB0-8876-0C9BCCC2F71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79EE6E97-117A-4CB0-8876-0C9BCCC2F71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79EE6E97-117A-4CB0-8876-0C9BCCC2F71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC32036-DE9C-40F0-BB25-2D720C0A3B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC32036-DE9C-40F0-BB25-2D720C0A3B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC32036-DE9C-40F0-BB25-2D720C0A3B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC32036-DE9C-40F0-BB25-2D720C0A3B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6B59B4-FC54-40AA-8AA2-BC801014A9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6B59B4-FC54-40AA-8AA2-BC801014A9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6B59B4-FC54-40AA-8AA2-BC801014A9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6B59B4-FC54-40AA-8AA2-BC801014A9B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
