@@ -1,0 +1,35 @@
+﻿@model mail
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Compose</h2>
+			<hr/>
+		</div>
+		<div class="mb-3">
+			<label asp-for="From"></label>
+			<input asp-for="From" class="form-control"/>
+		</div>
+		<div class="mb-3">
+			<label asp-for="To"></label>
+			<input asp-for="To" class="form-control"/>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Subject"></label>
+			<input asp-for="Subject" class="form-control"/>
+		</div>
+		<div class="mb-6">
+			<label asp-for="Body"></label>
+			<input asp-for="Body" class="form-control"/>
+		</div>
+		<div class="mb-6">
+			<label asp-for="AttachmentUrl"></label>
+			<input asp-for="AttachmentUrl" class="form-control"/>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:150px">Compose</button>
+		<a asp-controller="mail" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to list
+		</a>
+	</div>
+</form>
+
