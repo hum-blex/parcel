@@ -1,0 +1,63 @@
+﻿@model mail
+
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-primary">Compose</h2>
+			</div>
+		</div>
+	</div>
+	<div class="card-body p-4">
+		<form method="post" class="row">
+			<div class="border p-3 ">
+				
+				@* <div asp-validation-summary="All"></div> *@
+				<div class="form-floating py-2 col-12">
+					<input asp-for="From" class="form-control border-0 shadow" />
+					<label asp-for="From" class="ms-2"></label>
+					<span asp-validation-for="From" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="To" class="form-control border-0 shadow" />
+					<label asp-for="To" class="ms-2"></label>
+					
+					<span asp-validation-for="To" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Subject" class="form-control border-0 shadow" />
+					<label asp-for="Subject" class="ms-2"></label>
+					
+					<span asp-validation-for="Subject" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Body" class="form-control border-0 shadow" />
+					<label asp-for="Body" class="ms-2"></label>
+					
+					<span asp-validation-for="Body" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					
+					<input asp-for="AttachmentUrl" class="form-control border-0 shadow" />
+					<label asp-for="AttachmentUrl" class="ms-2"></label>
+					
+					<span asp-validation-for="AttachmentUrl" class="text-danger"></span>
+				</div>
+				<button type="submit" class="btn btn-primary" style="width:150px">Compose</button>
+				<a asp-controller="mail" asp-action="Index" class="btn btn-outline-primary" style="width:150px">
+					Back to list
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial"/> 
+	}
+}
+
+
